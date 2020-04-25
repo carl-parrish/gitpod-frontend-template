@@ -10,7 +10,7 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo ap
 # Install custom tools, runtime, etc.
 RUN sudo add-apt-repository -y ppa:neovim-ppa/unstable
 RUN sudo apt-get update && \
-    sudo apt-get install -y zsh neovim mlocate
+    sudo apt-get install -y zsh neovim mlocate mysql
 
 # Install nvm
 RUN bash -c ". .nvm/nvm.sh \
